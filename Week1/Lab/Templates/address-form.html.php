@@ -3,7 +3,7 @@
 <div class="container">
     <h1>Add Address</h1>
     <form action="#" method="post">   
-        Name: <input type="text" name="name" value="<?php echo $name; ?>" /> <br />
+       Name: <input type="text" name="name" value="<?php echo $name; ?>" /> <br />
        Email: <input type="text" name="email" value="<?php echo $email; ?>" /> <br />
        Address Line 1: <input type="text" name="addressline1" value="<?php echo $addressline1; ?>" /> <br />
        City: <input name="city" type="text" value="<?php echo $city; ?>" /> <br />

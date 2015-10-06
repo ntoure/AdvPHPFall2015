@@ -18,7 +18,15 @@ and open the template in the editor.
         // put your code here
         require_once './functions/dbconnect.php';
         require_once './functions/until.php';
-                
+        
+        $name = filter_input(INPUT_POST, 'name');
+        $email = filter_input(INPUT_POST, 'email');
+        $addressline1 = filter_input(INPUT_POST, 'addressline1');
+        $city = filter_input(INPUT_POST,'city');
+        $state = filter_input(INPUT_POST,'state');
+        $zip = filter_input(INPUT_POST,'zip');
+        $birthday = filter_input(INPUT_POST,'birthday');
+        
         $addresses = getAllAddress();
         
         include './templates/messages.html.php';
