@@ -18,7 +18,6 @@ and open the template in the editor.
         // put your code here
         require_once './functions/dbconnect.php';
         require_once './functions/until.php';
-        
                 
         $addresses = getAllAddress();
         
