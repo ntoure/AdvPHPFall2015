@@ -19,17 +19,10 @@ and open the template in the editor.
         require_once './functions/dbconnect.php';
         require_once './functions/until.php';
         
-        $name = filter_input(INPUT_POST, 'name');
-        $addressline1 = filter_input(INPUT_POST, 'addressline1');
-        $city = filter_input(INPUT_POST,'city');
-        $state = filter_input(INPUT_POST,'state');
-        $zip = filter_input(INPUT_POST,'zip');
-        $birthday = filter_input(INPUT_POST,'birthday');
-        
+                
         $addresses = getAllAddress();
         
         include './templates/messages.html.php';
-        include './templates/address-form.html.php';
         include './templates/view-addresses.html.php';
         ?>
     </body>
